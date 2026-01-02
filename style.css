@@ -384,3 +384,55 @@ form {
     color: var(--blue-accent);
     margin: 0 0.4rem;
 }
+
+/* ==============================
+   Footer
+============================== */
+.footer {
+    margin-top: 6rem;
+    padding: 2.5rem 2rem;
+
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(14px);
+
+    border-top: 1px solid var(--border-glass);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-title span {
+    color: var(--blue-accent);
+    margin: 0 0.3rem;
+}
+
+.footer-text {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+}
+
+.footer-copy {
+    margin-top: 1.2rem;
+    font-size: 0.75rem;
+    color: rgba(207, 233, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+}
