@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Pandya X Bliss Shell | UI-Hackathon Form</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">
+            Rahul Pandya X Bliss Shell
+        </h1>
+        <p class="header__p">
+            UI-Hackathon Form
+        </p>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="icon.jpg" class="hero__img" alt="Bliss Shell Logo">
+            <h1 class="hero__h1">
+                Participate in the UI-Hackathon & Get the chance to win
+                <span>Rs. 5000!</span>
+            </h1>
+            <a href="#register" class="cta-btn">Register Now!</a>
+
+        </div>
+        <section class="form-section" id="register">
+            <div class="form-card">
+                <h2 class="form-title">Register for the UI Hackathon</h2>
+                <p class="form-subtitle">
+                    Fill in your details to participate
+                </p>
+
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">WhatsApp Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91XXXXXXXXXX" pattern="[0-9+]{10,14}"
+                            required>
+                    </div>
+
+                    <div class="form-consent">
+                        <input type="checkbox" required>
+                        <span>
+                            I agree to receive WhatsApp updates regarding the event
+                        </span>
+                    </div>
+
+                    <button type="submit" class="cta-btn" id="submitBtn">
+                        Submit Registration
+                    </button>
+                    <p class="form-success" id="successMsg">
+                        🎉 Registration successful! We’ll contact you soon.
+                    </p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
