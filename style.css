@@ -57,7 +57,12 @@ body {
     font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 1px;
+
+    white-space: nowrap;        /* 🔒 prevents word breaking */
+    overflow: hidden;           /* safety */
+    text-overflow: ellipsis;    /* optional: adds … if too long */
 }
+
 
 .header__p {
     margin-top: 0.4rem;
@@ -357,4 +362,25 @@ form {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+@media (max-width: 480px) {
+    .header__h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .header__h1 span {
+        display: block;   /* 👈 stack vertically */
+    }
+
+    .header__h1 span:nth-child(2) {
+        color: var(--blue-accent); /* highlight X */
+        margin: 0.2rem 0;
+    }
+}
+
+.x-accent {
+    color: var(--blue-accent);
+    margin: 0 0.4rem;
 }
